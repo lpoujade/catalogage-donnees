@@ -15,6 +15,16 @@ type UpdateFrequency =
   | "monthly"
   | "yearly";
 
+type GeographicalCoverage =
+  | "municipality"
+  | "EPCI"
+  | "departement"
+  | "region"
+  | "national"
+  | "national (and oversea)"
+  | "europe"
+  | "world";
+
 export interface DatasetHeadlines {
   title: string;
   description: string;

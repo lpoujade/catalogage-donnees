@@ -42,6 +42,8 @@ export type Dataset = {
   service: string;
   lastUpdatedAt: Date | null;
   updateFrequency: UpdateFrequency | null;
+  lastUpdatedAt: string;
+  geographicalCoverage: GeographicalCoverage | null;
 };
 
 export type DatasetFormData = Omit<Dataset, "id" | "createdAt" | "headlines">;

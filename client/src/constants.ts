@@ -33,7 +33,9 @@ export const UPDATE_FREQUENCY_LABELS: { [K in UpdateFrequency]: string } = {
   yearly: "Annuel (ou plusieures fois par an)",
 };
 
-export const GEOGRAPHICAL_COVERAGE: { [K in GeographicalCoverage]: string } = {
+export const GEOGRAPHICAL_COVERAGE_LABELS: {
+  [K in GeographicalCoverage]: string;
+} = {
   municipality: "Communale",
   EPCI: "EPCI",
   departement: "Departementale",

@@ -5,7 +5,7 @@ export const toSelectOption = (source: {
 }): Array<SelectOption> => {
   return Object.keys(source).map((item, index) => ({
     id: `${source[item]}-${index}`,
-    label: item,
-    value: source[item],
+    label: source[item],
+    value: item,
   }));
 };

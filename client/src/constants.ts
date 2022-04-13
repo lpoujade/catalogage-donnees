@@ -39,7 +39,7 @@ export const GEOGRAPHICAL_COVERAGE: { [K in GeographicalCoverage]: string } = {
   departement: "Departementale",
   region: "Régionale",
   national: "Nationale (métropole)",
-  "national (and oversea)": "Nationale (terr Outre-mer inclus)",
+  national_full_territory: "Nationale (terr Outre-mer inclus)",
   europe: "Européenne",
   world: "Monde",
 };

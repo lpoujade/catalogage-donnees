@@ -1,5 +1,5 @@
 export type SelectOption = {
-  id?: string | number;
+  id?: string;
   value: string;
   label: string;
 };

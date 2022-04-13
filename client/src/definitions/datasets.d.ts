@@ -21,7 +21,7 @@ type GeographicalCoverage =
   | "departement"
   | "region"
   | "national"
-  | "national (and oversea)"
+  | "national_full_territory"
   | "europe"
   | "world";
 

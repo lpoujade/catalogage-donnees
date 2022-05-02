@@ -51,9 +51,13 @@
   </div>
 </section>
 
-<section class="fr-container fr-mt-8w fr-mb-15w">
-  {#if Maybe.Some(datasets)}
-    <h2 class="fr-mb-3w">{datasets.length} jeux de donnnées contribués</h2>
-    <DatasetList {datasets} />
-  {/if}
+<section class="fr-container">
+  <div class="fr-grid-row">
+    <div class="fr-col-12">
+      {#if Maybe.Some(datasets)}
+        <h2 class="fr-mb-3w">{datasets.length} jeux de donnnées contribués</h2>
+        <DatasetList {datasets} />
+      {/if}
+    </div>
+  </div>
 </section>

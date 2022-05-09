@@ -82,9 +82,17 @@
     </div>
 
     <div class="opening">
-      <p href="#" class="fr-badge fr-badge--info fr-badge--no-icon">
-        Label badge
-      </p>
+      {#if dataset.publishedUrl}
+        <a
+          href={dataset.publishedUrl}
+          target="blank"
+          class="fr-badge fr-badge--info fr-badge--no-icon"
+        >
+          Open data
+        </a>
+      {:else}
+        <p class="fr-badge fr-badge--error fr-badge--no-icon">Open data</p>
+      {/if}
     </div>
     <div class="action">
       <p class="fr-text--sm">
@@ -133,6 +141,13 @@
     align-items: flex-end;
     justify-content: flex-end;
     width: 15%;
+  }
+
+  .opening > * {
+    height: 15%;
+    max-width: 70%;
+    display: block;
+    text-align: center;
   }
 
   .action {
